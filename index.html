@@ -21,9 +21,9 @@
     <title>MyPortfolio</title>
   </head>
   <body class="bg-[#F6F6F6]">
-    <header
-      class="bg-[url('assets/portfoliopic.png')] -mt-23 bg-cover cursor-pointer w-full bg-no-repeat h-[160vh] bg-[position:0px_80px] min-h-screen="
-    >
+   <header
+  class="bg-[url('../assets/portfoliopic.png')] bg-cover -mt-20 bg-no-repeat w-full h-[90vh] sm:h-[100vh] md:h-[120vh] lg:h-[160vh] items-center justify-center bg-[position:0px_90px]"
+>
       <nav
         class="flex justify-between bg-[#98A1BC] fixed top-0 w-[100%] mx-auto"
       >
@@ -57,7 +57,7 @@
               <a
                 class="text-white hover:text-white transition hover:underline duration-300 font-mono"
                 href="#portfolio"
-                >Portfolio</a
+                >Project</a
               >
             </li>
             <li class="swim1">
@@ -121,9 +121,9 @@
       </nav>
       <!-- ......the hero section...... -->
       <section class="hero flex flex-col items-end pt-40" id="home">
-        <div class="mt-17">
-          <h1 class="text-5xl font-mono mb-5 block">Hi,</h1>
-          <h1 class="text-5xl font-mono mb-5 block text-gray-900">
+        <div class="-mt-7 lg:mt-17 ">
+          <h1 class="lg:text-5xl text-4xl font-mono mb-5 block ">Hi,</h1>
+          <h1 class="lg:text-5xl text-4xl font-mono mb-5 block text-gray-900">
             I'm Kasia, <br />a Frontend Developer.
           </h1>
           <!-- <h2 class="text-4xl mb-4 font-bold">Kasia Ampomah</h2> -->
@@ -172,7 +172,7 @@
     <!-- -----------about me section---------- -->
     <section
       id="about"
-      class="flex justify-start items-center mt-10 gap-10 w-[80%]  h-120 mx-auto"
+      class="flex justify-between items-center mt-10 gap-10 w-[90%] h-120 mx-auto"
     >
       <!-- -------video------ -->
       <div>
@@ -180,22 +180,22 @@
           src="./assets/video.mp4"
           autoplay
           loop
-          class="w-90 rounded-full border-3 border-[#483AA0]"
+          class="w-90 rounded-full border-3 border-[#483AA0] hidden lg:block"
         ></video>
       </div>
       <!-- the end of the video -->
 
       <div
-        class="w-[60%] flex flex-col gap-10 cursor-pointer items-center mb-35"
+        class="lg:w-[60%] w-full flex flex-col gap-10 cursor-pointer items-center mb-35"
       >
         <div class="justify-start">
-          <h1 class="md-text left text-4xl font-mono mt-20">
-            <span class="text-[#1f2745]">About</span>
-            <span class="text-[#483AA0]">Me</span>
+          <h1 class="md-text left text-5xl font-bold mt-20">
+            <span class="text-[#1f2745]">About Me</span>
+            <!-- <span class="text-[#483AA0]">Me</span> -->
           </h1>
-          <h1 class="text-2xl font-mono mb-4">
+          <h1 class="text-2xl font-mono mt-3 mb-4">
             <span class="text-[#483AA0]">
-              Frontend Developer | A Responsive Web Designer.
+              Frontend Developer 
             </span>
           </h1>
           <p class="gap-10 mt-4 font-semibold">
@@ -221,8 +221,8 @@
     <section
       class="my-10 bg-[#98A1BC] h-80 py-10 flex flex-col items-center justify-center"
     >
-      <h2 class="text-4xl font-mono text-center text-black mb-5 text-[#1f2745]">
-        Tech <span class="text-[#483AA0]"> Stacks</span>
+      <h2 class="text-5xl font-bold text-center text-black mb-5 text-[#1f2745]">
+        Tech Stacks</span>
       </h2>
       <div class="w-full flex justify-center items-center">
         <div class="overflow-hidden whitespace-nowrap w-full max-w-3xl">
@@ -264,7 +264,7 @@
             <!-- Tailwind CSS -->
             <span class="inline-block mx-8 align-middle">
               <div class="flex flex-col items-center">
-                <svg viewBox="0 0 48 48" fill="none" class="w-12 h-12 mb-1">
+                <svg viewBox="0 0 48 48" fill="none" class="w-17 h-12 mb-1">
                   <path
                     fill="#38BDF8"
                     d="M24 12c-5.333 0-8.667 2.667-10 8 2-2.667 4.333-3.667 7-3 1.522.381 2.606 1.465 3.797 2.656C26.989 21.848 28.072 22.932 29.594 23.313c2.667.667 5-0.333 7-3-1.333-5.333-4.667-8-10-8zm-10 12c-5.333 0-8.667 2.667-10 8 2-2.667 4.333-3.667 7-3 1.522.381 2.606 1.465 3.797 2.656C14.989 33.848 16.072 34.932 17.594 35.313c2.667.667 5-0.333 7-3-1.333-5.333-4.667-8-10-8z"
@@ -278,7 +278,7 @@
           </div>
         </div>
       </div>
-      <style>
+      <!-- <style>
         @keyframes marquee {
           0% {
             transform: translateX(0);
@@ -290,7 +290,7 @@
         .animate-marquee {
           animation: marquee 18s linear infinite;
         }
-      </style>
+      </style> -->
     </section>
     <!-- Slider main container -->
     <!-- </div>
@@ -298,9 +298,9 @@
 
     <!-- -----section2--------->
     <section id="services" class="py-20 px-10 bg-white">
-      <h2 class="text-4xl font-mono text-center mb-6">
+      <h2 class="text-5xl font-bold text-center mb-6">
         <!-- <span class="text-[#F6F6F6]">My</span> -->
-        <span class="text-[#483AA0]">Services</span>
+        <span class="text-[#1f2745]">Services</span>
       </h2>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8 cursor-pointer">
         <!-- service 1 -->
@@ -346,9 +346,9 @@
     </section>
 
     <section id="portfolio" class="py-20 px-10">
-      <h2 class="text-4xl font-bold text-center mb-6">
-        <span class="text-[#1f2745]">Project</span>
-        <span class="text-[#483AA0]">Gallery</span>
+      <h2 class="text-5xl font-bold text-center mb-6">
+        <span class="text-[#1f2745]">Project Gallery</span>
+        <!-- <span class="text-[#483AA0]"></span> -->
       </h2>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
          <div
@@ -468,18 +468,18 @@
 
     <!-- CONTACT SECTION -->
     <section id="contact" class="py-20 px-6 bg-[#98A1BC]">
-      <h2 class="text-4xl font-mono text-center mb-10">
-        <span class="text-[#1F2745]">Contact</span>
-        <span class="text-[#483AA0]">Me</span>
+      <h2 class="text-5xl font-bold text-center mb-10">
+        <span class="text-[#1f2745]">Contact Me</span>
+        <!-- <span class="text-[#483AA0]">Me</span> -->
       </h2>
       <div
         class="gap-10 flex flex-col items-center md:items-start w-[80%] mx-auto justify-center md:flex-row"
       >
-        <div class="lets-talk w-[50%]">
+        <div class="lets-talk lg:w-[50%] w-full">
           <h1 class="font-mono text-3xl mb-4 text-[#1F2745]">
             Connect With Me
           </h1>
-          <p class="mb-3 text-[17px]">
+          <p class="mb-3 text-[17px] ">
             Available for new projects and open to collaboration. Feel free to
             get in touch with your ideas. Happy to discuss how I can contribute.
             You can reach out anytime.
@@ -509,7 +509,7 @@
         </div>
         <form
           action="#"
-          class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6"
+          class="lg:max-w-4xl w-full mx-auto grid grid-cols-1 md:grid-cols-2 gap-6"
         >
           <input
             type="text"
@@ -545,7 +545,7 @@
           <!-- lastButton -->
           <div class="md:col-span-2 text-center">
             <a
-              class="text-[#1F2745] px-8 py-3 rounded-full font-semibold shadow-md transition-all duration-300 transform hover:scale-105 hover:shadow-[0-0-20px-#59B2F4] cursor-pointer focus:outline-none cursor-pointer hover:text-white hover:bg-[#1f2745]"
+              class="text-[#1F2745] px-8 py-3 rounded-full font-semibold shadow-md transition-all duration-300 transform hover:scale-105 hover:shadow-[0-0-20px-#59B2F4] focus:outline-none cursor-pointer hover:text-white hover:bg-[#1f2745]"
             >
               Send Message
             </a>
@@ -567,45 +567,5 @@
       </div>
     </footer>
     <script src="./index.js"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-      const swiper = new Swiper(".swiper", {
-        slidesPerView: 3, // Show 3 images at once
-        centeredSlides: false,
-        spaceBetween: 0, // Space between slides
-        loop: true, // Loop continuously
-        autoplay: {
-          delay: 1000,
-          disableOnInteraction: false,
-        },
-
-        breakpoints: {
-          768: {
-            slidesPerView: 5,
-          },
-          480: {
-            slidesPerView: 3,
-          },
-          0: {
-            slidesPerView: 2,
-          },
-        },
-      });
-    </script>
-    <script src="three.r134.min.js"></script>
-<script src="vanta.dots.min.js"></script>
-<script>
-VANTA.DOTS({
-  el: "#vibe",
-  mouseControls: true,
-  touchControls: true,
-  gyroControls: false,
-  minHeight: 200.00,
-  minWidth: 200.00,
-  scale: 1.00,
-  scaleMobile: 1.00,
-  color2: 0x412d1c
-})
-</script> -->
   </body>
 </html>
