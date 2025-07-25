@@ -170,58 +170,86 @@
     </header>
     <!-- -----------about me section---------- -->
     <!-- -----------about me section---------- -->
-    <section
-      id="about"
-      class="flex justify-between items-center mt-10 gap-10 w-[90%] h-120 mx-auto"
-    >
-      <!-- -------video------ -->
-      <div>
-        <video
-          src="./assets/video.mp4"
-          autoplay
-          loop
-          class="w-90 rounded-full border-3 border-[#483AA0] hidden lg:block"
-        ></video>
+  <section id="about" class="w-[90%] mx-auto py-10">
+  <div class="flex flex-col lg:flex-row gap-10 items-start">
+    <!-- Left: About Content -->
+    <div class="flex-1 flex flex-col gap-6 items-start">
+      <div class="text-left">
+        <h1 class="text-5xl font-bold mt-10">
+          <span class="text-[#1f2745]">About Me</span>
+        </h1>
       </div>
-      <!-- the end of the video -->
+      <div>
+        <h2 class="text-2xl font-mono text-[#483AA0]">Frontend Developer</h2>
+        <p class="font-semibold leading-relaxed mt-4">
+          I'm a frontend developer passionate about building clean,<br />
+          responsive, and user-friendly interfaces. I work with modern tools
+          like HTML, CSS, JavaScript, React, and Tailwind CSS to turn ideas
+          into engaging digital experiences. I love solving design challenges,
+          improving performance, and collaborating with teams. Outside of
+          coding, I enjoy exploring design trends, UX, and side projects to
+          keep learning.
+        </p>
+      </div>
+    </div>
 
-      <div
-        class="lg:w-[60%] w-full flex flex-col gap-10 cursor-pointer items-center mb-35"
-      >
-        <div class="justify-start">
-          <h1 class="md-text left text-5xl font-bold mt-20">
-            <span class="text-[#1f2745]">About Me</span>
-            <!-- <span class="text-[#483AA0]">Me</span> -->
-          </h1>
-          <h1 class="text-2xl font-mono mt-3 mb-4">
-            <span class="text-[#483AA0]">
-              Frontend Developer 
-            </span>
-          </h1>
-          <p class="gap-10 mt-4 font-semibold">
-            I'm a frontend developer passionate about building clean,
-            responsive, and user-friendly interfaces. I work with modern tools
-            like HTML, CSS, JavaScript, React, and tailwind CSS to turn ideas
-            into engaging digital experiences. I love solving design challenges,
-            improving performance, and collaborating with teams. Outside of
-            coding, I enjoy exploring design trends, UX, and side projects to
-            keep learning.
-          </p>
-          <div class="mt-4">
-            <!-- <button
-              class="p-2 border-none cursor-pointer bg-[#483AA0] rounded-full p-3 transition-all duration-300 transform hover:scale-105 hover:shadow-[0_0_20px_#59B2F4] hover:text-white font-bold mb-3"
-            >
-              Read More
-            </button> -->
+    <!-- Right: Skills -->
+    <div class="w-full lg:w-[45%]">
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-8 hover:shadow-md transition-shadow duration-300">
+        <h3 class="text-xl font-semibold text-gray-900 mb-6">Skills & Expertise</h3>
+        <div class="space-y-4">
+          <!-- Skill Item -->
+          <div class="skill-item">
+            <div class="flex justify-between mb-2 text-sm font-medium text-gray-700">
+              <span>Frontend Development</span>
+              <span class="text-gray-500">95%</span>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-2">
+              <div class="bg-gradient-to-r from-blue-500 to-blue-600 h-2 rounded-full" style="width: 95%"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="flex justify-between mb-2 text-sm font-medium text-gray-700">
+              <span>UI/UX Design</span>
+              <span class="text-gray-500">90%</span>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-2">
+              <div class="bg-gradient-to-r from-purple-500 to-purple-600 h-2 rounded-full" style="width: 90%"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="flex justify-between mb-2 text-sm font-medium text-gray-700">
+              <span>Project Management</span>
+              <span class="text-gray-500">85%</span>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-2">
+              <div class="bg-gradient-to-r from-green-500 to-green-600 h-2 rounded-full" style="width: 85%"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="flex justify-between mb-2 text-sm font-medium text-gray-700">
+              <span>Team Collaboration</span>
+              <span class="text-gray-500">85%</span>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-2">
+              <div class="bg-gradient-to-r from-orange-500 to-orange-600 h-2 rounded-full" style="width: 85%"></div>
+            </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
+
     <!-- SKILLS SECTION -->
     <section
       class="my-10 bg-[#98A1BC] h-80 py-10 flex flex-col items-center justify-center"
     >
-      <h2 class="text-5xl font-bold text-center text-black mb-5 text-[#1f2745]">
+       <!-- Technologies -->
+          <h2 class="text-5xl font-bold text-center text-black mb-5 text-[#1f2745]">
         Tech Stacks</span>
       </h2>
       <div class="w-full flex justify-center items-center">
@@ -278,6 +306,8 @@
           </div>
         </div>
       </div>
+    
+
       <!-- <style>
         @keyframes marquee {
           0% {
@@ -392,19 +422,15 @@
         <div
           class="p-4 rounded-lg shadow-lg transition-transform duration-300 transform hover:scale-105 hover:text-white hover:border-2 hover:border-[#59B2F4] hover:shadow-[0_0_20px_#59B2F4] hover:bg-[#98A1BC]"
         >
-          <a href="https://kez-chi.vercel.app/" target="_blank">
+          <a href="https://ebe-farms.netlify.app/" target="_blank">
             <img
-              src="./assets/image.png"
+              src="./assets/farm.jpeg"
               alt="Project 1"
               class="rounded mb-4 w-100 h-90 object-cover"
             />
-            <h3 class="text-xl font-semibold">Frieght Fowarding website</h3>
+            <h3 class="text-xl font-semibold">Farm Investment website</h3>
             <p class="">
-              I created a responsive logistics website using HTML and CSS,
-              featuring a clean layout, intuitive navigation, and sections for
-              services and shipment tracking. The project emphasizes
-              performance, usability, and my ability to build user-friendly
-              static websites.
+              Developed a user-focused farm investment platform that enables individuals to invest in farms, rent agricultural equipment, and buy fresh produce bridging the gap between technology and sustainable agriculture.
             </p>
           </a>
         </div>
